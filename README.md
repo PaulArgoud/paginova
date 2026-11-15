@@ -1,6 +1,7 @@
 # Paginova for WordPress
 
 [![Version](https://img.shields.io/badge/version-2.3.0-blue.svg)](https://github.com/PaulArgoud/paginova/releases/tag/2.3.0)
+[![WordPress.org](https://img.shields.io/wordpress/plugin/v/paginova.svg?label=wordpress.org)](https://wordpress.org/plugins/paginova/)
 [![CI](https://github.com/PaulArgoud/paginova/actions/workflows/ci.yml/badge.svg)](https://github.com/PaulArgoud/paginova/actions/workflows/ci.yml)
 [![License: GPL v3](https://img.shields.io/badge/license-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![WordPress](https://img.shields.io/badge/WordPress-6.3%2B-0073aa.svg)](https://wordpress.org/)
@@ -55,14 +56,21 @@ With every SEO plugin, a chapter gets its own title, canonical URL and Open Grap
 
 ## Installation
 
-1. Download `paginova.zip` from the [latest release](https://github.com/PaulArgoud/paginova/releases/latest) (use this archive, not GitHub's "Source code" archives, which contain the development files and a differently named folder)
-2. In WordPress, go to **Plugins > Add New > Upload Plugin** and upload the zip, or unzip it so that the plugin sits in `/wp-content/plugins/paginova/`
-3. Activate **Paginova** through the **Plugins** menu
-4. Configure it under **Settings > Paginova**
+Paginova is on [WordPress.org](https://wordpress.org/plugins/paginova/):
+
+1. In WordPress, go to **Plugins > Add New**, search for **Paginova**, then click **Install Now**
+2. Activate **Paginova**
+3. Configure it under **Settings > Paginova**
+
+WordPress then updates it like any plugin from WordPress.org, and its translations come from the language packs of translate.wordpress.org.
 
 If Post Chapters or Multipage is installed, follow [Coming from Post Chapters](#coming-from-post-chapters) or [Coming from Multipage](#coming-from-multipage) instead.
 
-Paginova is not on WordPress.org yet. Its header declares `Update URI: https://github.com/PaulArgoud/paginova`, so WordPress never replaces it with a plugin of the same slug from WordPress.org. To update, download the new zip and upload it again (WordPress offers to replace the installed version).
+### GitHub build
+
+Each [release](https://github.com/PaulArgoud/paginova/releases/latest) also has a `paginova.zip` (use this archive, not GitHub's "Source code" archives, which contain the development files and a differently named folder). It holds the same code plus the bundled French, German, Italian and Spanish translations. Upload it under **Plugins > Add New > Upload Plugin**, or unzip it so that the plugin sits in `/wp-content/plugins/paginova/`.
+
+Its header declares `Update URI: https://github.com/PaulArgoud/paginova`, so WordPress does not update it from WordPress.org: to update, download the new zip and upload it again (WordPress offers to replace the installed version). To switch to the WordPress.org version, upload the zip of [its page](https://wordpress.org/plugins/paginova/) the same way; the settings and the content are kept.
 
 ## Coming from Post Chapters
 
